@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #ffb301;
+  --secondary-color: #333333;
+  --background-color: #f6f4e6;
+  --highlight-color: rgba(255, 255, 255, 0.1);
+  --card-shadow-hover: 0 6px 30px var(--primary-color);
+  --form-focus-shadow: rgba(241, 196, 15, 0.8);
+}
+.navbar .nav-link.active {
+  background-color: #f1c40f;
+  border-radius: 10px;
+}
+
+.navbar .nav-link {
+  color: #ffb301;
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: var(--secondary-color);
+  align-items: center;
+}
+
+.jumbotron img {
+  width: 40vw;
+}
+
+.btn-custom {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.btn-custom:hover {
+  background-color: var(--primary-color);
+}
+
+#about {
+  background: var(--background-color);
+  padding-bottom: 5rem;
+}
+
+i {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+a:hover i {
+  color: var(--primary-color);
+}
+
+#skills {
+  background: var(--secondary-color);
+  padding-bottom: 5rem;
+}
+
+#projects {
+  background: #717171;
+  padding-bottom: 5rem;
+}
+
+.skill-item {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-item img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  height: 100%;
+}
+.project-img {
+  object-fit: cover;
+  height: 250px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.form-control {
+  border-color: var(--primary-color);
+}
+
+.form-control:focus {
+  transition-delay: 100ms;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--form-focus-shadow);
+}
+
+.modal-custom {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header-custom {
+  border-bottom: var(--primary-color);
+}
+
+.modal-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.modal-message {
+  font-size: 18px;
+  color: #333;
+}
+
+.modal-footer-custom {
+  border-top: var(--primary-color);
+}
+
+.modal-content {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0, -30px);
+  opacity: 0;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translate(0, 0);
+  opacity: 1;
+}
